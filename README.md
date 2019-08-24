@@ -29,13 +29,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-        .forEach() is a method used to iterate through an array and perform a task on each item in the array whereas .map() is a method used to create a new array out of the items in an original array.Map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. callback is invoked only for indexes of the array which have assigned values, including undefined.
+        .forEach() is a method used to iterate through an array and perform a task on each item in the array whereas .map() is a method used to create a new array out of the items in an original array. Map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. 
 
 2. What is the difference between a function and a method?
-        A function is a tool that can be used across various operatives in JS to return a value, whereas a method is a function that is specifically used for a certain operative to achieve a certain task. For example a function can be used to allow a game character to speak as well as to allow to items to be added together, but a .forEach() method is specifically used for arrays with the purpose of searching through each item in the array. 
+        A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function. When a function is called, arguments are passed to the function as input, and the function can optionally return an output. A function in JavaScript is also an object.
+
+        A method is a function which is a property of an object. There are two kind of methods: Instance Methods which are built-in tasks performed by an object instance, or Static Methods which are tasks that are called directly on an object constructor.
 
 3. What is closure?
-        Closure is the ability or inability of an object to access information outside of it's operative scope. A child object may access a variable created outside of its scope, but only if that variable is created in a parent object or in global scope. Whereas a parent object may not be able to access a variable defined within the closure of one of its child's scopes.
+        A closure is the combination of a function and the lexical environment within which that function was declared. This environment consists of any local variables that were in-scope at the time the closure was created.
 
 4. Describe the four rules of the 'this' keyword.
         1. Window/Global Object Binding - When in the global scope, the value of “this” will be the window/console Object;
