@@ -29,15 +29,24 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+        .forEach() is a method used to iterate through an array and perform a task on each item in the array whereas .map() is a method used to create a new array out of the items in an original array. Map calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. 
 
 2. What is the difference between a function and a method?
+        A function is a code snippet that can be called by other code or by itself, or a variable that refers to the function. When a function is called, arguments are passed to the function as input, and the function can optionally return an output. A function in JavaScript is also an object.
+
+        A method is a function which is a property of an object. There are two kind of methods: Instance Methods which are built-in tasks performed by an object instance, or Static Methods which are tasks that are called directly on an object constructor.
 
 3. What is closure?
+        A closure is the combination of a function and the lexical environment within which that function was declared. This environment consists of any local variables that were in-scope at the time the closure was created.
 
 4. Describe the four rules of the 'this' keyword.
+        1. Window/Global Object Binding - When in the global scope, the value of “this” will be the window/console Object;
+        2. Implicit Binding - Whenever a function is called by a preceding dot, the object before that dot is “this.”
+        3. New binding - Whenever a constructor function is used, "this" refers to the specific instance of the object that is created and returned by the constructor function.
+        4. Explicit Binding - Whenever JavaScript’s call or apply method is used, "this" is explicitly defined.
 
 5. Why do we need super() in an extended class?
-
+        Super() is used to tell a parent’s constructor to be concerned with the child’s attributes, and abstracts away the Object.create(this, Class) syntax.
 ## Project Set up
 
 Follow these steps to set up and work on your project:
